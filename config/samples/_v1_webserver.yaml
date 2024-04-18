@@ -6,4 +6,5 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
   name: webserver-sample
 spec:
-  # TODO(user): Add fields here
+  image: registry.cn-guangzhou.aliyuncs.com/yleoer/nginx
+  replicas: 3

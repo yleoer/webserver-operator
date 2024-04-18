@@ -28,6 +28,12 @@ type WebServerSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
+	// Replicas The number of replicas that the webserver should have
+	Replicas int `json:"replicas,omitempty"`
+
+	// Image The container image of the webserver
+	Image string `json:"image,omitempty"`
+
 	// Foo is an example field of WebServer. Edit webserver_types.go to remove/update
 	Foo string `json:"foo,omitempty"`
 }
